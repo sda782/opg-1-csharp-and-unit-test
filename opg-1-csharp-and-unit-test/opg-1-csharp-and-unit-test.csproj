@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>opg_1_csharp_and_unit_test</RootNamespace>
+  </PropertyGroup>
+
+</Project>
