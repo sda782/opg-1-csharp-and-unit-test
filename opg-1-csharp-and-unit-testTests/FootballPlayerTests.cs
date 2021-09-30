@@ -11,22 +11,31 @@ namespace opg_1_csharp_and_unit_test.Tests
     [TestClass()]
     public class FootballPlayerTests
     {
+        /// <summary>
+        /// Testing Id
+        /// </summary>
         [TestMethod()]
         public void IdTest()
         {
             FootballPlayer player = new FootballPlayer(1, "andy", 1, 55);
             Assert.AreEqual(player.Id, 1);
         }
+        /// <summary>
+        /// Testing Name cannot be shorter than 4 characters
+        /// </summary>
         [TestMethod()]
         public void NameTest()
         {
             FootballPlayer player = new FootballPlayer(1, "andy", 1, 55);
             Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
             {
-                player.Name = "bo";
+                player.Name = "bob";
             });
             Assert.AreEqual(player.Name, "andy");
         }
+        /// <summary>
+        /// Testing price must be larger than 0
+        /// </summary>
         [TestMethod()]
         public void PriceTest()
         {
@@ -37,6 +46,9 @@ namespace opg_1_csharp_and_unit_test.Tests
             });
             Assert.AreEqual(player.Price, 1);
         }
+        /// <summary>
+        /// Testing shirtnumber must be >=1 and <=100
+        /// </summary>
         [TestMethod()]
         public void ShirtNumberTest()
         {

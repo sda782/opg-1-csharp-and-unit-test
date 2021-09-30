@@ -15,7 +15,13 @@ namespace opg_1_csharp_and_unit_test
             Price = price;
             Shirt_number = shirt_number;
         }
+        /// <summary>
+        /// Get or Set Id for football player, Id must be an integar
+        /// </summary>
         public int Id { get => _id; set => _id = value; }
+        /// <summary>
+        /// Get or Set name for football player, Name must be atleast 4 characters long
+        /// </summary>
         public string Name
         {
             get => _name;
@@ -28,6 +34,9 @@ namespace opg_1_csharp_and_unit_test
                 _name = value;
             }
         }
+        /// <summary>
+        /// Get or Set price for foolball player, price must be >= 0
+        /// </summary>
         public double Price
         {
             get => _price;
@@ -41,6 +50,9 @@ namespace opg_1_csharp_and_unit_test
 
             }
         }
+        /// <summary>
+        /// Get or Set shirtnumber for football player, shirtnumber must be >=1 and <=100
+        /// </summary>
         public int Shirt_number
         {
             get => _shirt_number;
